@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f7fafc;
+    color: #1a202c;
+    line-height: 1.5;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1.25rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.navbar nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #718096;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.navbar nav a.active, .navbar nav a:hover {
+    color: #1a202c;
+}
+
+
+.hero-section {
+    padding: 2rem 8%;
+}
+
+.hero-content {
+    background-color: #1a202c;
+    color: #ffffff;
+    padding: 3.5rem 3rem;
+    border-radius: 20px;
+}
+
+.hero-content .sub-title {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #a0aec0;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+.hero-content p {
+    color: #cbd5e0;
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1a202c;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+.container {
+    padding: 1rem 8% 4rem 8%;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.section-tag {
+    font-size: 0.75rem;
+    color: #a0aec0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.catalog-header h2 {
+    font-size: 1.5rem;
+    color: #1a202c;
+}
+
+.total-badge {
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.category-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.4rem;
+}
+
+.product-category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #a0aec0;
+}
+
+.badge-discount {
+    background-color: #edf2f7;
+    color: #2d3748;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.product-title {
+    font-size: 1.15rem;
+    color: #1a202c;
+    margin-bottom: 0.75rem;
+}
+
+
+.price-section {
+    margin-bottom: 1.5rem;
+}
+
+.original-price {
+    font-size: 0.85rem;
+    color: #a0aec0;
+    text-decoration: line-through;
+    display: block;
+}
+
+.final-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.stock-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    color: #545557;
+}
+
+.status-badge {
+    font-weight: 600;
+}
+
+.status-badge.available {
+    color: #38a169;
+}
+
+.status-badge.out-of-stock {
+    color: #e53e3e;
+}
+
+
+.btn-buy {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1a202c;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn-buy.disabled {
+    background-color: #e2e8f0;
+    color: #a0aec0;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #edf2f7;
+    background-color: #ffffff;
+    color: #a0aec0;
+    font-size: 0.85rem;
+}
+
+
+@media (max-width: 768px) {
+    .navbar, .hero-section, .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .hero-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+}
